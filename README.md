@@ -2,6 +2,7 @@
 # 📦 CollectionAlgorithms
 
 A powerful and lightweight Swift SDK that extends Swift's native `Collection` types with a set of generic, reusable, and production-ready algorithms — inspired by the best of C++, Python, and Kotlin.
+[![Swift Package Index](https://img.shields.io/badge/Swift%20Package%20Index-Listed-blue)](https://swiftpackageindex.com/SangaleBhushan/CollectionAlgorithms)
 
 ---
 

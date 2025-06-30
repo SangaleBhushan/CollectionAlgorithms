@@ -1,0 +1,16 @@
+//
+//  File.swift
+//  CollectionAlgorithms
+//
+//  Created by Siddhatech on 27/06/25.
+//
+
+import Foundation
+public extension Sequence where Element: Hashable {
+    /// Returns a dictionary of element frequencies.
+    func frequencies() -> [Element: Int] {
+        var result: [Element: Int] = [:]
+        forEach { result[$0, default: 0] += 1 }
+        return result
+    }
+}

@@ -5,20 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "CollectionAlgorithms",
+    platforms: [.iOS(.v13), .macOS(.v11)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "CollectionAlgorithms",
-            targets: ["CollectionAlgorithms"]),
+        .library(name: "CollectionAlgorithms", targets: ["CollectionAlgorithms"])
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "CollectionAlgorithms"),
-        .testTarget(
-            name: "CollectionAlgorithmsTests",
-            dependencies: ["CollectionAlgorithms"]
-        ),
+        .target(name: "CollectionAlgorithms", path: "Sources/CollectionAlgorithms"),
+        .testTarget(name: "CollectionAlgorithmsTests", dependencies: ["CollectionAlgorithms"], path: "Tests/CollectionAlgorithmsTests")
     ]
 )
